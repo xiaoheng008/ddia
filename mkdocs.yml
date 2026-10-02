@@ -1,0 +1,54 @@
+site_name: 数据库系统：从单机内核到分布式一致性
+site_description: 从问题出发，逐步重建数据库内核与分布式系统
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang: zh
+
+nav:
+  - 首页: index.md
+  - 学习路线: SUMMARY.md
+  - 学习协议: curriculum.md
+  - 概念演化图: evolution-map.md
+  - 教程:
+      - 序言: book/00-preface.md
+      - 01 数据如何从文件变成存储页: book/01-from-files-to-storage.md
+      - 02 怎样少读页：从索引到 B+ 树: book/02-indexes-and-btrees.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/reader.css
+
+copyright: 教程文字采用 CC BY 4.0

@@ -1,0 +1,26 @@
+:root {
+  --md-text-font: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, monospace;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #173b5f;
+  --md-accent-fg-color: #c45136;
+  --md-typeset-a-color: #176184;
+}
+
+.md-content { line-height: 1.85; }
+.md-content__inner { max-width: 54rem; margin-inline: auto; }
+.md-typeset h1 { font-size: 1.8rem; font-weight: 650; }
+.md-typeset h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-sidebar__title { font-weight: 650; }
+.md-typeset .md-button { margin: 0.35rem 0.5rem 0.35rem 0; }
+.md-typeset table:not([class]) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
