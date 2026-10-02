@@ -42,6 +42,7 @@ nav:
       - 序言: book/00-preface.md
       - 01 数据如何从文件变成存储页: book/01-from-files-to-storage.md
       - 02 怎样少读页：从索引到 B+ 树: book/02-indexes-and-btrees.md
+      - 03 SQL 怎样变成执行计划: book/03-from-sql-to-query-plan.md
 
 markdown_extensions:
   - admonition

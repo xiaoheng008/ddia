@@ -11,9 +11,9 @@
 
 ## 当前内容
 
-**阶段 1 · 从文件到索引**
+**阶段 1 · 从文件到索引** · **阶段 2 · 从 SQL 到执行计划**
 
-[序言](book/00-preface.md) · [存储页](book/01-from-files-to-storage.md) · [索引与 B+ 树](book/02-indexes-and-btrees.md)
+[序言](book/00-preface.md) · [存储页](book/01-from-files-to-storage.md) · [索引与 B+ 树](book/02-indexes-and-btrees.md) · [查询计划](book/03-from-sql-to-query-plan.md)
 
 配套内容：[学习路线](SUMMARY.md) · [学习协议](curriculum.md) · [概念演化图](evolution-map.md)
 
