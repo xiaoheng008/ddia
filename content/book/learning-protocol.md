@@ -1,6 +1,6 @@
 ---
 title: 学习协议
-weight: 90
+weight: 100
 ---
 
 ## 目标能力

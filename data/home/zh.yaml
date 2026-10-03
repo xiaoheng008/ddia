@@ -32,6 +32,10 @@ cards:
       desc: 从丢失更新和写偏斜出发，理解行锁保护什么、死锁怎样产生，以及隔离级别承诺什么。
       icon: fa-solid fa-lock
       url: book/ch06-locking/
+    - title: 已完成 · MVCC 与版本可见性
+      desc: 从不一致报表推出快照与版本，再比较 InnoDB undo 和 PostgreSQL 旧 tuple 怎样回收。
+      icon: fa-solid fa-clock
+      url: book/ch07-mvcc/
     - title: 后续 · MySQL、PostgreSQL 与 TiDB
       desc: 继续从 InnoDB 与 PostgreSQL 的事务、MVCC 走向 Raft 共识、分片和 TiDB 的分布式 SQL。
       icon: fa-solid fa-network-wired
