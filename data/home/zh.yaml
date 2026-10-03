@@ -48,6 +48,10 @@ cards:
       desc: 从网络分区下的双主风险推出任期、多数派、日志匹配与当前任期提交规则。
       icon: fa-solid fa-people-arrows-left-right
       url: book/ch10-raft/
+    - title: 已完成 · 分布式事务与 TiDB
+      desc: 从两个 Region 局部提交不原子推出 2PC，并追踪 TiDB prewrite 与主键提交路径。
+      icon: fa-solid fa-diagram-project
+      url: book/ch11-distributed-txn/
     - title: 后续 · MySQL、PostgreSQL 与 TiDB
       desc: 继续从 InnoDB 与 PostgreSQL 的事务、MVCC 走向 Raft 共识、分片和 TiDB 的分布式 SQL。
       icon: fa-solid fa-network-wired
