@@ -44,6 +44,10 @@ cards:
       desc: 从主库确认后副本仍可能落后的窗口，区分异步、同步确认、远端持久化和共识。
       icon: fa-solid fa-server
       url: book/ch09-replication/
+    - title: 已完成 · Raft 与分布式共识
+      desc: 从网络分区下的双主风险推出任期、多数派、日志匹配与当前任期提交规则。
+      icon: fa-solid fa-people-arrows-left-right
+      url: book/ch10-raft/
     - title: 后续 · MySQL、PostgreSQL 与 TiDB
       desc: 继续从 InnoDB 与 PostgreSQL 的事务、MVCC 走向 Raft 共识、分片和 TiDB 的分布式 SQL。
       icon: fa-solid fa-network-wired
