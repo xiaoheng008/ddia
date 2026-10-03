@@ -1,0 +1,53 @@
+title: 数据库系统：从单机内核到分布式一致性
+baseURL: https://xiaoheng008.github.io/ddia/
+defaultContentLanguage: zh
+enableGitInfo: true
+enableRobotsTXT: true
+timeZone: Asia/Shanghai
+
+languages:
+  zh:
+    label: 简体中文
+    locale: zh-CN
+    weight: 1
+    title: 数据库系统：从单机内核到分布式一致性
+    hasCJKLanguage: true
+    params:
+      description: 从问题出发，逐步重建数据库内核与分布式一致性。
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
+  highlight:
+    noClasses: false
+
+outputs:
+  home: [HTML, RSS, markdown, LLMS]
+  page: [HTML, markdown]
+  section: [HTML, RSS, print, markdown]
+
+params:
+  offline_search: true
+  copyright:
+    authors: Henry Xiao
+    from_year: 2026
+  footer_center_info: 采用 evo-learn 方法组织
+  github_repo: https://github.com/xiaoheng008/ddia
+  github_branch: main
+  ui:
+    dark_mode: true
+    sidebar_menu_foldable: true
+    sidebar_headings: 3
+    backlinks: true
+
+module:
+  imports:
+    - path: github.com/pgsty/oink
+  hugoVersion:
+    extended: true
+    min: 0.160.1

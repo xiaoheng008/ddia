@@ -1,26 +1,24 @@
 # 数据库系统：从单机内核到分布式一致性
 
-这套教程用 evo-learn 的方式组织：从一个实际问题出发，先尝试已有办法，再暴露限制，最后引出数据库里的抽象与实现。目标不是背下组件名称，而是能从需求重建设计，并读懂 MySQL 8、PostgreSQL、TiDB 等系统为何做出不同选择。
+一套用 evo-learn 方法编写的中文电子书：从文件和存储页出发，逐步推导索引、查询执行、事务恢复、并发控制、MVCC，再走向复制、分布式共识和 TiDB。
 
-## 适合谁
+## 阅读
 
-假设你会使用 SQL，了解基本的数据结构和并发编程。暂不要求读过数据库源码，也不要求先学完分布式系统。遇到必要的操作系统、网络和存储知识时，课程会按需补齐。
-
-## 电子书
-
-本项目采用 MkDocs Material 构建可搜索、适合阅读的电子书网站。按 [电子书首页](docs/index.md) 或 [学习路线](docs/SUMMARY.md) 开始阅读。
-
-教程正文位于 `docs/book/`，配套概念图位于 `docs/evolution-map.md`。每章从问题和尝试开始，再引出新抽象，并以练习和重建题收束。
-
-## 版本与实现边界
-
-数据库内部实现会随版本变化。课程先讲相对稳定的设计压力，再用明确标注的版本和源码位置验证实现细节。MySQL 8、PostgreSQL 与 TiDB 的对照是为了展示不同的设计选择，不代表这些系统内部组件一一对应。
+电子书源文件位于 `content/book/`。书籍目录本身决定阅读顺序，章节号由 OINK 的 `book_number` 明确标注。首页区分已完成的内容和后续规划。
 
 ## 本地预览
 
+需要 Go 1.27.0 和 Hugo Extended 0.165.0。项目通过 `go.mod` / `go.sum` 固定 OINK 主题版本；首次构建需要联网下载 Hugo 模块。
+
 ```bash
-python -m pip install -r requirements.txt
-mkdocs serve
+hugo server
 ```
 
-需要 Python 环境与网络下载依赖。先读章节中的问题并动手回答，再看发现与概念；不要跳过重建题。具体数据库版本、源码路径和实验环境会在相应章节标明。
+严格生产构建：
+
+```bash
+hugo --cleanDestinationDir --gc --minify --environment production \
+  --printPathWarnings --panicOnWarning
+```
+
+详细配置见 [hugo.yaml](hugo.yaml)；概念演化图、学习路线和掌握协议也都收录在书籍导航中。

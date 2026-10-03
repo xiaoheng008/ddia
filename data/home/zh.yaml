@@ -1,0 +1,37 @@
+sections: [hero, cards, cta]
+
+hero:
+  align: center
+  eyebrow: 从问题出发，重建数据库系统
+  title_lines:
+    - words: [{ text: 从一页数据， }]
+    - words: [{ text: 走到分布式共识。 }]
+  lead: 先看旧方案在哪里失效，再推导索引、事务、恢复、MVCC、Raft 与分布式 SQL 为什么成为必要。
+  actions:
+    - { label: 从序言开始, url: book/, icon: fa-solid fa-book-open, style: primary }
+    - { label: 看演化路线, url: book/learning-path/, icon: fa-solid fa-arrow-right, style: ghost }
+
+cards:
+  eyebrow: 学习路径
+  title: 每种新能力都由一个旧问题逼出
+  columns: 3
+  items:
+    - title: 已完成 · 文件、页与索引
+      desc: 追加文件查找太慢，于是组织成页，再用 B+ 树减少访问页数。
+      icon: fa-solid fa-database
+      url: book/ch01-storage/
+    - title: 已完成 · SQL 与执行计划
+      desc: SQL 只说明要什么；优化器需要在多种等价执行方式中估算和选择。
+      icon: fa-solid fa-diagram-project
+      url: book/ch03-query-plan/
+    - title: 后续 · 事务、恢复与分布式
+      desc: 崩溃和并发逼出 WAL、锁与 MVCC；节点故障继续逼出复制、共识与分布式事务。
+      icon: fa-solid fa-network-wired
+      url: book/learning-path/
+
+cta:
+  title: 从一个小型存储系统开始。
+  text: 先尝试已有办法，再沿着失败轨迹重建数据库里的抽象。
+  label: 阅读第一课
+  url: book/ch01-storage/
+  style: primary
